@@ -5,7 +5,7 @@ fake = Faker()
 def test_user_creation():
     username = fake.user_name()                  # Ej: "maria_89"
     email = fake.email()                         # Ej: "maria@example.com"
-    age = fake.random_in(18, 99)                  #Ej: 25
+    age = fake.random_int(18, 99)                  #Ej: 25
 
     # Simulación de creación de usuario
     user_data = {"username": username, "email": email, "age": age}
